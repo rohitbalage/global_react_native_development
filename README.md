@@ -1,4 +1,4 @@
-# Welcome to your Global React Native Application 👋
+# Global React Native Application 📲
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app) I have added all my practice of React Native Component here.
 
