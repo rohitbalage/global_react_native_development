@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Button, StyleSheet, ScrollView } from 'react-native';
+import { View, Text, Button, StyleSheet, ScrollView } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 
 export default function HomeScreen() {
@@ -9,6 +9,7 @@ export default function HomeScreen() {
       style={styles.container}
     >
       <ScrollView contentContainerStyle={styles.scrollView}>
+        <Text style={styles.headline}>Global React Native App</Text>
         {Array.from({ length: 10 }).map((_, index) => (
           <View key={index} style={styles.buttonContainer}>
             <Button
@@ -28,14 +29,22 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    margin: 10,
   },
   scrollView: {
     flexGrow: 1,
     justifyContent: 'center',
     alignItems: 'center',
   },
+  headline: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 20,
+    marginTop: 20,
+  },
   buttonContainer: {
     margin: 10,
-    width: '80%',
+    width: '90%', // Adjusted width to be 90% of the parent container
   },
 });
+
